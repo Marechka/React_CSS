@@ -8,7 +8,8 @@ import styled from 'styled-components';
 // will be executed as a method, just with odd syntax
 // BACKTICKS 
 const Button = styled.button`
-  
+
+    width: 100%;  
     font: inherit;
     padding: 0.5rem 1.5rem;
     border: 1px solid #8b005d;
@@ -17,8 +18,12 @@ const Button = styled.button`
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
     cursor: pointer;
 
+    @media (min-width: 768px) {
+      width: auto;
+    }
+
   // now can use '&' instead of "button" word
-  
+
   &:focus {
     outline: none;
   }
